@@ -48,7 +48,7 @@ In case the previous link does not work you can access the google document that 
 
 ### Hand-written, static HTML 
 #### project description:
-a brief introduction of the project and its features can be found [hier](index.html) on the root directory under the name 'index.html'
+a brief introduction of the project and its features can be found [hier](https://github.com/sallaji/grails-project-example/blob/master/index.html) on the root directory under the name 'index.html'
 
 ## External contributions:
 - The Grails tutorials and the code examples provided in the official Grails documentation as well as in the
