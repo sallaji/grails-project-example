@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Don't you wanna use it anymore? Do not throw it away, give it away">
+    <meta name="keywords" content="An application to donate and get second-hand articles">
+    <meta name="author" content="Santiago Llano">
+    <title>Reyours | Welcome</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!--js for scrolling down till features div appears -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#scroll-to-features").on('click', function (e) {
+                if (this.hash !== "") {
+                    e.preventDefault();
+                    var featuresHash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(featuresHash).offset().top
+                    }, 1500, function () {
+                        window.location.hash = featuresHash;
+                    });
+                }
+            });
+        });
+    </script>
+    <link rel="icon" href="grails-app/assets/images/reuso.png">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div id="logo">
+            <a href="index.html">
+                <img id="image-logo" src="./grails-app/assets/images/reuso.png" alt="Reyours">
+                <h1 class="brand-motto">Reyours</h1>
+            </a></div>
+        <nav>
+            <ul>
+
+                <li>
+                    <a id="scroll-to-features" href="#all-features">Features</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="image-font">
+    <div class="container">
+        <div class="image-font-container">
+            <h2 id="reyours-image-font-title">Reyours</h2>
+            <h2>
+                Do not throw it away, give it away
+            </h2>
+            <p>Every year tons of reusable products are thrown away and they can be given a second chance</p>
+        </div>
+    </div>
+</section>
+<section id="reasons-section">
+    <div class="container">
+        <h2>Reasons</h2>
+        <p>
+            Recycling is one of the keys to sustainability. And there is no recycling more efficient than the
+            second-hand
+            market. The growing awareness of climate change and the environment is triggering the use of buying and
+            selling
+            platforms. According to the "Second Hand Effect" report, the method used to calculate the potential benefit
+            for
+            the climate derived from the second-hand market is based on the assumption that each used item sold replaces
+            the
+            production of a new equivalent item, as well as the management of the waste of said product. That is, if a
+            person buys a used bicycle instead of a new one, there will be no need to produce a new one and, in
+            addition,
+            the used one will not have to be processed to turn it into waste.
+
+            Reyours understanding this problem arises as a channel that connects people who want to donate an article
+            that,
+            even being second hand, is still useful and therefore could be used by another person who needs it.
+
+            Reyours allows the virtual communication of people who, although unknown, are aware of the problems of
+            climate
+            change and other factors of social nature so they accept with pleasure the acquisition and donation of
+            second-hand items
+        </p>
+    </div>
+</section>
+
+<section id="all-features">
+    <div class="container">
+        <h2 class="features-title">Features</h2>
+
+        <div class="feature">
+            <h3>
+                Create an Announcement
+            </h3>
+            <div class="div-image-background-feature">
+                <img src="grails-app/assets/images/create_announcement.png" alt="Create Announcement">
+
+            </div>
+            <p>
+                Do you have an article to give? With Reyours you can create easily and without the need to register
+                announcements and share with the community.
+            </p>
+        </div>
+
+        <div class="feature">
+            <h3>
+                Update Images
+            </h3>
+            <div class="div-image-background-feature">
+                <img src="grails-app/assets/images/upload_image.png" alt="Update Images">
+            </div>
+            <p>
+                a picture is worth a thousand words so you can add an image of the article you want to donate to your
+                announcement
+            </p>
+        </div>
+
+        <div class="feature">
+            <h3>
+                Edit/Delete Announcements
+            </h3>
+            <div class="div-image-background-feature">
+                <img src="grails-app/assets/images/edit_delete.png" alt="Edit and Delete Announcements">
+            </div>
+            <p>
+                You can easily edit or delete announcements so you can tell others about news
+            </p>
+        </div>
+
+        <div class="feature">
+            <h3>
+                Search and Filter Announcements
+            </h3>
+            <div class="div-image-background-feature">
+                <img src="grails-app/assets/images/search_announcement.png" alt="Search and Filter Announcements">
+            </div>
+            <p>
+                If you are looking for an article you can easily access all the announcements in our database, you can
+                even
+                filter the announcements by title and finalization date. </p>
+        </div>
+
+        <div class="feature">
+            <h3>
+                send a request to the donor user
+            </h3>
+            <div class="div-image-background-feature">
+                <img src="grails-app/assets/images/send_request.png" alt="Send Request">
+            </div>
+            <p>
+                In case you are interested in an announcement you can send an email directly from the website to the
+                donor user, in this way he or she can contact you
+            </p>
+        </div>
+    </div>
+
+
+</section>
+
+<footer>
+<span>A Grails Project - 2018</span>
+</footer>
+
+</body>
+</html>
